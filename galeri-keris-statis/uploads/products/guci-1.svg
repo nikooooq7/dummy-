@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice"><defs>
+<linearGradient id="bgh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a1d0b"/><stop offset="1" stop-color="#0b0704"/></linearGradient>
+<radialGradient id="glh" cx=".5" cy=".5" r=".55"><stop offset="0" stop-color="#d4af37" stop-opacity=".30"/><stop offset="1" stop-color="#d4af37" stop-opacity="0"/></radialGradient>
+<pattern id="kwh" width="80" height="80" patternUnits="userSpaceOnUse"><g fill="none" stroke="#d4af37" stroke-opacity=".10" stroke-width="1.2"><ellipse cx="40" cy="20" rx="12" ry="20"/><ellipse cx="40" cy="60" rx="12" ry="20"/><ellipse cx="20" cy="40" rx="20" ry="12"/><ellipse cx="60" cy="40" rx="20" ry="12"/></g></pattern>
+<linearGradient id="goldh" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6e4f0f"/><stop offset=".3" stop-color="#e8c75a"/><stop offset=".5" stop-color="#fff3c0"/><stop offset=".72" stop-color="#c9a032"/><stop offset="1" stop-color="#5a3f0b"/></linearGradient>
+<linearGradient id="woodh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a4a1c"/><stop offset=".5" stop-color="#4a2a0e"/><stop offset="1" stop-color="#2b1706"/></linearGradient>
+</defs>
+<rect width="800" height="600" fill="url(#bgh)"/><rect width="800" height="600" fill="url(#kwh)"/><ellipse cx="400" cy="290" rx="330" ry="250" fill="url(#glh)"/><defs><linearGradient id="ceh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0c2a5a"/><stop offset=".35" stop-color="#2f66b5"/><stop offset=".55" stop-color="#cfe0f5"/><stop offset=".8" stop-color="#1f4a8f"/><stop offset="1" stop-color="#0a2048"/></linearGradient></defs>
+<g transform="translate(400 305)">
+<ellipse cx="0" cy="218" rx="100" ry="14" fill="#000" fill-opacity=".45"/>
+<path d="M-62,-210 C-62,-232 62,-232 62,-210 L54,-170 C140,-120 160,40 98,150 C70,198 -70,198 -98,150 C-160,40 -140,-120 -54,-170 Z" fill="url(#ceh)" stroke="#4a3208" stroke-width="2"/>
+<ellipse cx="0" cy="-212" rx="62" ry="12" fill="#0a2048" stroke="url(#goldh)" stroke-width="5"/>
+<path d="M-56,-172 Q0,-150 56,-172" fill="none" stroke="url(#goldh)" stroke-width="6"/>
+<path d="M-112,120 Q0,150 112,120" fill="none" stroke="url(#goldh)" stroke-width="6"/>
+<path d="M-118,-60 C-60,-100 10,-20 70,-70 C110,-98 128,-60 128,-60" fill="none" stroke="url(#goldh)" stroke-width="5" stroke-linecap="round"/>
+<path d="M-130,10 C-70,-30 0,50 66,0 C106,-26 132,10 132,10" fill="none" stroke="url(#goldh)" stroke-width="5" stroke-linecap="round"/>
+<path d="M-116,76 C-60,40 10,110 70,64 C100,40 120,70 120,70" fill="none" stroke="url(#goldh)" stroke-width="5" stroke-linecap="round"/>
+</g><rect x="14" y="14" width="772" height="572" fill="none" stroke="#d4af37" stroke-opacity=".35" stroke-width="1.5"/><text x="400" y="578" text-anchor="middle" font-family="Georgia,serif" font-size="15" letter-spacing="4" fill="#d4af37" fill-opacity=".55">ILUSTRASI</text></svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1f1509"/><stop offset="1" stop-color="#090603"/></linearGradient>
+<radialGradient id="glow" cx=".78" cy=".5" r=".55"><stop offset="0" stop-color="#d4af37" stop-opacity=".30"/><stop offset="1" stop-color="#d4af37" stop-opacity="0"/></radialGradient>
+<radialGradient id="vig" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".6"/></radialGradient>
+<pattern id="kw" width="120" height="120" patternUnits="userSpaceOnUse" patternTransform="rotate(0)">
+<g fill="none" stroke="#d4af37" stroke-opacity=".13" stroke-width="1.4">
+<ellipse cx="60" cy="30" rx="18" ry="30"/><ellipse cx="60" cy="90" rx="18" ry="30"/>
+<ellipse cx="30" cy="60" rx="30" ry="18"/><ellipse cx="90" cy="60" rx="30" ry="18"/></g>
+<g fill="#d4af37" fill-opacity=".16"><circle cx="60" cy="60" r="3.4"/><circle cx="0" cy="0" r="3.4"/><circle cx="120" cy="0" r="3.4"/><circle cx="0" cy="120" r="3.4"/><circle cx="120" cy="120" r="3.4"/></g>
+</pattern></defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect width="1600" height="900" fill="url(#kw)"/>
+<rect width="1600" height="900" fill="url(#glow)"/>
+<rect width="1600" height="900" fill="url(#vig)"/>
+</svg>

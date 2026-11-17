@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Koleksi — Galeri Keris Nusantara</title>
+  <meta name="description" content="Galeri keris dan barang antik pilihan: keris berpamor, tombak, dan benda antik bersejarah dengan keaslian terjamin.">
+  <meta name="theme-color" content="#0c0804">
+  <meta property="og:title" content="Koleksi — Galeri Keris Nusantara">
+  <meta property="og:description" content="Galeri keris dan barang antik pilihan: keris berpamor, tombak, dan benda antik bersejarah dengan keaslian terjamin.">
+  <meta property="og:type" content="website">
+    <link rel="icon" href="assets/img/logo.svg">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="position-sticky top-0" style="z-index:1030">
+  <nav class="navbar navbar-expand-lg site-nav">
+    <div class="container">
+      <a class="navbar-brand brand m-0" href="index.html">
+        <img src="assets/img/logo.svg" alt="Logo Galeri Keris Nusantara">
+        <span>
+          <span class="brand-name">Galeri Keris Nusantara</span>
+          <span class="brand-tag d-none d-sm-block">Pusaka Adiluhung, Warisan Kejayaan Nusantara</span>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+              aria-controls="mainMenu" aria-expanded="false" aria-label="Buka menu">
+        <svg class="icon icon-menu" width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>      </button>
+      <div class="collapse navbar-collapse" id="mainMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link " href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="koleksi.html">Koleksi</a></li>
+          <li class="nav-item"><a class="nav-link " href="profil.html">Profil Kami</a></li>
+          <li class="nav-item"><a class="nav-link " href="kontak.html">Kontak</a></li>
+                  </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<main>
+<section class="page-hero" style="background-image:url('assets/img/bg-hero.svg')">
+  <div class="container">
+    <nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Beranda</a></li><li class="breadcrumb-item active">Koleksi</li></ol></nav>
+    <h1>Koleksi Pusaka & Barang Antik</h1>
+    <p>Temukan keris, tombak, dan benda antik pilihan kami.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="filter-bar">
+      <form method="get" action="koleksi.html" class="row g-2 align-items-end">
+                <div class="col-md-6">
+          <label class="form-label" for="q">Cari koleksi</label>
+          <input type="search" class="form-control" id="q" name="q" value="" placeholder="Nama, asal daerah, bahan, atau era...">
+        </div>
+        <div class="col-md-3">
+          <label class="form-label" for="status">Status</label>
+          <select class="form-select" id="status" name="status">
+            <option value="">Semua</option>
+                          <option value="tersedia" >Tersedia</option>
+                          <option value="dipesan" >Dipesan</option>
+                          <option value="terjual" >Terjual</option>
+                      </select>
+        </div>
+        <div class="col-md-3 d-flex gap-2">
+          <button class="btn btn-gold flex-fill" type="submit"><svg class="icon icon-search" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M10 2a8 8 0 0 1 6.300 12.900l5.400 5.400-1.400 1.400-5.400-5.400A8 8 0 1 1 10 2zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg> Cari</button>
+                  </div>
+      </form>
+    </div>
+
+    <div class="mb-4">
+      <a class="chip active" href="koleksi.html">Semua</a>
+              <a class="chip " href="koleksi.html?kategori=keris">
+          Keris <small>(2)</small>
+        </a>
+              <a class="chip " href="koleksi.html?kategori=tombak-senjata-pusaka">
+          Tombak &amp; Senjata Pusaka <small>(2)</small>
+        </a>
+              <a class="chip " href="koleksi.html?kategori=perhiasan-cincin-antik">
+          Perhiasan &amp; Cincin Antik <small>(1)</small>
+        </a>
+              <a class="chip " href="koleksi.html?kategori=keramik-perabot-antik">
+          Keramik &amp; Perabot Antik <small>(1)</small>
+        </a>
+          </div>
+
+          <p class="text-muted small mb-3" id="resultCount"></p>
+      <div class="empty-state d-none" id="emptyState"><h3 class="mt-3">Belum ada koleksi yang cocok</h3><p>Coba kata kunci lain, atau <a href="koleksi.html">lihat semua koleksi</a>.</p></div><div class="row g-4" id="productGrid">
+                  <div class="col-sm-6 col-lg-4 col-xl-3" data-product data-cat="tombak-senjata-pusaka" data-status="terjual" data-text="wedung antik gagang tanduk jawa · awal abad ke-20"><a class="product-card is-sold" href="produk/wedung-antik-gagang-tanduk.html">
+  <div class="product-thumb">
+    <span class="status-badge status-sold">Terjual</span>    <img src="uploads/products/wedung-1.svg" alt="Wedung Antik Gagang Tanduk" loading="lazy">
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Tombak &amp; Senjata Pusaka</span>    <h3 class="product-title">Wedung Antik Gagang Tanduk</h3>
+          <div class="product-meta">Jawa · Awal abad ke-20</div>
+        <div class="product-price">Terjual</div>
+  </div>
+</a>
+</div>
+                  <div class="col-sm-6 col-lg-4 col-xl-3" data-product data-cat="keramik-perabot-antik" data-status="dipesan" data-text="guci keramik antik motif naga asia · awal abad ke-20"><a class="product-card " href="produk/guci-keramik-antik-motif-naga.html">
+  <div class="product-thumb">
+    <span class="status-badge status-reserved">Dipesan</span>    <img src="uploads/products/guci-1.svg" alt="Guci Keramik Antik Motif Naga" loading="lazy">
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Keramik &amp; Perabot Antik</span>    <h3 class="product-title">Guci Keramik Antik Motif Naga</h3>
+          <div class="product-meta">Asia · Awal abad ke-20</div>
+        <div class="product-price">Rp 3.200.000</div>
+  </div>
+</a>
+</div>
+                  <div class="col-sm-6 col-lg-4 col-xl-3" data-product data-cat="perhiasan-cincin-antik" data-status="tersedia" data-text="cincin perak antik batu akik nusantara · awal abad ke-20"><a class="product-card " href="produk/cincin-perak-antik-batu-akik.html">
+  <div class="product-thumb">
+        <img src="uploads/products/cincin-1.svg" alt="Cincin Perak Antik Batu Akik" loading="lazy">
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Perhiasan &amp; Cincin Antik</span>    <h3 class="product-title">Cincin Perak Antik Batu Akik</h3>
+          <div class="product-meta">Nusantara · Awal abad ke-20</div>
+        <div class="product-price">Rp 1.750.000</div>
+  </div>
+</a>
+</div>
+                  <div class="col-sm-6 col-lg-4 col-xl-3" data-product data-cat="tombak-senjata-pusaka" data-status="tersedia" data-text="tombak pusaka pamor ngulit semangka jawa · abad ke-19"><a class="product-card " href="produk/tombak-pusaka-pamor-ngulit-semangka.html">
+  <div class="product-thumb">
+        <img src="uploads/products/tombak-1.svg" alt="Tombak Pusaka Pamor Ngulit Semangka" loading="lazy">
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Tombak &amp; Senjata Pusaka</span>    <h3 class="product-title">Tombak Pusaka Pamor Ngulit Semangka</h3>
+          <div class="product-meta">Jawa · Abad ke-19</div>
+        <div class="product-price">Rp 7.500.000</div>
+  </div>
+</a>
+</div>
+                  <div class="col-sm-6 col-lg-4 col-xl-3" data-product data-cat="keris" data-status="tersedia" data-text="keris luk 9 pamor udan mas jawa timur · abad ke-18"><a class="product-card " href="produk/keris-luk-9-pamor-udan-mas.html">
+  <div class="product-thumb">
+        <img src="uploads/products/keris-luk9-1.svg" alt="Keris Luk 9 Pamor Udan Mas" loading="lazy">
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Keris</span>    <h3 class="product-title">Keris Luk 9 Pamor Udan Mas</h3>
+          <div class="product-meta">Jawa Timur · Abad ke-18</div>
+        <div class="product-price">Rp 18.000.000</div>
+  </div>
+</a>
+</div>
+                  <div class="col-sm-6 col-lg-4 col-xl-3" data-product data-cat="keris" data-status="tersedia" data-text="keris luk 7 pamor beras wutah jawa tengah · abad ke-19"><a class="product-card " href="produk/keris-luk-7-pamor-beras-wutah.html">
+  <div class="product-thumb">
+        <img src="uploads/products/keris-luk7-1.svg" alt="Keris Luk 7 Pamor Beras Wutah" loading="lazy">
+  </div>
+  <div class="product-body">
+    <span class="product-cat">Keris</span>    <h3 class="product-title">Keris Luk 7 Pamor Beras Wutah</h3>
+          <div class="product-meta">Jawa Tengah · Abad ke-19</div>
+        <div class="product-price">Rp 12.500.000</div>
+  </div>
+</a>
+</div>
+              </div>
+      
+      </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <a class="brand mb-3" href="index.html">
+          <img src="assets/img/logo.svg" alt="">
+          <span class="brand-name">Galeri Keris Nusantara</span>
+        </a>
+        <p class="small text-muted mb-3">Pusaka Adiluhung, Warisan Kejayaan Nusantara</p>
+        <div class="social">
+                            </div>
+      </div>
+      <div class="col-6 col-lg-3 offset-lg-1">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="koleksi.html">Koleksi</a></li>
+          <li><a href="profil.html">Profil Kami</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-4">
+        <h4>Hubungi Kami</h4>
+        <ul class="small">
+          <li class="d-flex gap-2"><svg class="icon icon-pin" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7zm0 4.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg> <span>Jl. Contoh No. 123<br />
+Yogyakarta, Indonesia</span></li>          <li class="d-flex gap-2"><svg class="icon icon-phone" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg> <a href="tel:081200000000">0812-0000-0000</a></li>          <li class="d-flex gap-2"><svg class="icon icon-mail" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1.5 2L12 12.5 19.5 7h-15zM4 9.2V17h16V9.2l-8 5.8-8-5.8z"/></svg> <a href="mailto:halo@galerikeris.example">halo@galerikeris.example</a></li>          <li class="d-flex gap-2"><svg class="icon icon-clock" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm-1 5v6l4.5 2.7.8-1.3-3.8-2.2V7H11z"/></svg> <span>Senin – Sabtu, 09.00 – 17.00 WIB</span></li>                  </ul>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <span>&copy; 2026 Galeri Keris Nusantara. Situs demo portofolio — produk, harga, dan kontak hanyalah contoh.</span>
+      
+    </div>
+  </div>
+</footer>
+
+
+<div class="modal fade" id="photoModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-body p-0 text-center">
+        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        <img id="photoModalImg" src="" alt="" class="img-fluid" style="max-height:88vh">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/static.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice"><defs>
+<linearGradient id="bgf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a1d0b"/><stop offset="1" stop-color="#0b0704"/></linearGradient>
+<radialGradient id="glf" cx=".5" cy=".5" r=".55"><stop offset="0" stop-color="#d4af37" stop-opacity=".30"/><stop offset="1" stop-color="#d4af37" stop-opacity="0"/></radialGradient>
+<pattern id="kwf" width="80" height="80" patternUnits="userSpaceOnUse"><g fill="none" stroke="#d4af37" stroke-opacity=".10" stroke-width="1.2"><ellipse cx="40" cy="20" rx="12" ry="20"/><ellipse cx="40" cy="60" rx="12" ry="20"/><ellipse cx="20" cy="40" rx="20" ry="12"/><ellipse cx="60" cy="40" rx="20" ry="12"/></g></pattern>
+<linearGradient id="goldf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6e4f0f"/><stop offset=".3" stop-color="#e8c75a"/><stop offset=".5" stop-color="#fff3c0"/><stop offset=".72" stop-color="#c9a032"/><stop offset="1" stop-color="#5a3f0b"/></linearGradient>
+<linearGradient id="woodf" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a4a1c"/><stop offset=".5" stop-color="#4a2a0e"/><stop offset="1" stop-color="#2b1706"/></linearGradient>
+</defs>
+<rect width="800" height="600" fill="url(#bgf)"/><rect width="800" height="600" fill="url(#kwf)"/><ellipse cx="400" cy="290" rx="330" ry="250" fill="url(#glf)"/><g transform="translate(400 300) rotate(-12)">
+<path d="M-250,-14 C-250,-34 -214,-40 -180,-30 L-110,-14 L-110,26 L-180,38 C-214,46 -250,34 -250,14 Z" fill="url(#woodf)" stroke="#1b0e03" stroke-width="1.5"/>
+<path d="M-236,-6 q10,-14 24,-4 M-236,10 q12,-12 26,-2" fill="none" stroke="#d4af37" stroke-opacity=".6"/>
+<rect x="-116" y="-26" width="14" height="60" rx="3" fill="url(#goldf)" stroke="#4a3208"/>
+<path d="M-102,-22 L190,-60 C236,-66 262,-30 250,10 C244,32 214,44 180,38 L-102,26 Z" fill="url(#goldf)" stroke="#4a3208" stroke-width="1.6"/>
+<path d="M-96,-6 L196,-36 C226,-38 238,-14 236,4" fill="none" stroke="#fffbe6" stroke-opacity=".7" stroke-width="2"/>
+<path d="M-96,12 L180,16 C206,18 222,20 232,14" fill="none" stroke="#2c1a05" stroke-opacity=".5" stroke-width="1.5"/>
+</g><rect x="14" y="14" width="772" height="572" fill="none" stroke="#d4af37" stroke-opacity=".35" stroke-width="1.5"/><text x="400" y="578" text-anchor="middle" font-family="Georgia,serif" font-size="15" letter-spacing="4" fill="#d4af37" fill-opacity=".55">ILUSTRASI</text></svg>
